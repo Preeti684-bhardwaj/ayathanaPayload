@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const ProductVariantResponseAttributes: CollectionConfig = {
   slug: "productVariantResponse",
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

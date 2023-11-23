@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const CampaignResponseAttributes: CollectionConfig = {
   slug: "campaignResponse",
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const AboutSectionResponseAttributes: CollectionConfig = {
   slug: "aboutSectionResponse",
+  admin: {
+    useAsTitle: "tabTitle",
+  },
   auth: true,
   fields: [
     {

@@ -3,6 +3,9 @@ import { CollectionConfig } from 'payload/types';
 
 const ContentUpdateResponseAttributes: CollectionConfig = {
   slug: 'contentUpdateResponse',
+  admin: {
+    useAsTitle: "update_time",
+  },
 auth: true,
   fields: [
     {

@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const AddressResponseAttributes: CollectionConfig = {
   slug: "addressResponse",
+  admin: {
+    useAsTitle: "address1",
+  },
   auth: true,
   fields: [
     {

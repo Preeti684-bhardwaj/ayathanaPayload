@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const EventResponseAttributes: CollectionConfig = {
   slug: "eventResponse",
+  admin: {
+    useAsTitle: "name",
+  },
   auth: true,
   fields: [
     {

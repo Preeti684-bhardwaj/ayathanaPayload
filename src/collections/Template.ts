@@ -2,6 +2,9 @@ import { CollectionConfig } from 'payload/types';
 
 const TemplateResponseAttributes: CollectionConfig = {
     slug: 'templateResponse',
+    admin: {
+        useAsTitle: "template_number_tag",
+      },
     auth: true,
     fields: [
       {

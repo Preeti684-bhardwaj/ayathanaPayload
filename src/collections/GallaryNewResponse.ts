@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const GalleryNewResponseAttributes: CollectionConfig = {
   slug: "galleryNewResponse",
+  admin: {
+    useAsTitle: "media_data",
+  },
   auth: true,
   fields: [
     {

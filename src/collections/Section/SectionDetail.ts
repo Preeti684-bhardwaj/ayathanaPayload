@@ -3,6 +3,9 @@ import { CollectionConfig } from 'payload/types';
 // SectionDetailResponseAttributes
 const SectionDetailResponseAttributes: CollectionConfig = {
   slug: 'sectionDetailResponse',
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

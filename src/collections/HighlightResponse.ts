@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const HighlightResponseAttributes: CollectionConfig = {
   slug: "highlightResponse",
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

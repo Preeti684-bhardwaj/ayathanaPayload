@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const ColourPaletteResponseAttributes: CollectionConfig = {
   slug: "colourPaletteResponse",
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

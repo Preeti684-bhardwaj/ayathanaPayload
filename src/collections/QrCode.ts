@@ -2,6 +2,9 @@ import { CollectionConfig } from 'payload/types';
 
 const QrcodeResponseAttributes: CollectionConfig = {
     slug: 'qrcodeResponse',
+    admin: {
+        useAsTitle: "image",
+      },
     auth: true,
     fields: [
       {

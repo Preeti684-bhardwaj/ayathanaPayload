@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const AboutContentResponseAttributes: CollectionConfig = {
   slug: "aboutContentResponse",
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

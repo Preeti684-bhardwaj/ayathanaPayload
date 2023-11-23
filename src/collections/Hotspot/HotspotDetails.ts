@@ -2,6 +2,9 @@ import { CollectionConfig } from 'payload/types';
 
 const HotspotDetailsResponseAttributes: CollectionConfig = {
     slug: 'hotspotDetailsResponse',
+    admin: {
+        useAsTitle: "hotspot",
+      },
    auth: true,
     fields: [
       {

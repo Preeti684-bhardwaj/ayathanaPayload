@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const ProductCategoryResponseAttributes: CollectionConfig = {
   slug: "productCategoryResponse",
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

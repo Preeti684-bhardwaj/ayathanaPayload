@@ -3,6 +3,9 @@ import { CollectionConfig } from 'payload/types';
 // HotspotImagesResponseAttributes
 const HotspotImagesResponseAttributes: CollectionConfig = {
   slug: 'hotspotImagesResponse',
+  admin: {
+    useAsTitle: "title",
+  },
 auth: true,
   fields: [
     {

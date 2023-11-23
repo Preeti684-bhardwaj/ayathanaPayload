@@ -2,6 +2,9 @@ import { CollectionConfig } from 'payload/types';
 
 const DealResponseAttributes: CollectionConfig = {
   slug: 'dealResponse',
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {

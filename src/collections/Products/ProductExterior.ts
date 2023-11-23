@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const ProductExteriorResponseAttributes: CollectionConfig = {
   slug: "productExteriorResponse",
+  admin: {
+    useAsTitle: "title",
+  },
   auth: true,
   fields: [
     {
