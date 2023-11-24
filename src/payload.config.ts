@@ -77,6 +77,6 @@ export default buildConfig({
   },
   plugins:[payloadCloud()],
   db:mongooseAdapter({
-    url:process.env.DATABSE_URI
+    url:process.env.DATABASE_URI
   }),
 })
