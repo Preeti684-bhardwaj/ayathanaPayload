@@ -74,7 +74,7 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
-  plugins: [payloadCloud()],
+  plugins:[payloadCloud()],
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URI,
