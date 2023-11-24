@@ -5,6 +5,9 @@ const HotspotDetailsResponseAttributes: CollectionConfig = {
     admin: {
         useAsTitle: "hotspot",
       },
+      access: {
+       read: () => true,
+     },
    auth: true,
     fields: [
       {

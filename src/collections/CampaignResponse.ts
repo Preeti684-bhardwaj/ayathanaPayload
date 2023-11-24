@@ -5,6 +5,9 @@ const CampaignResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "title",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {

@@ -5,6 +5,9 @@ const OrganizationResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "name",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {

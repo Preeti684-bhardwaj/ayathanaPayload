@@ -5,6 +5,9 @@ const AboutSectionResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "tabTitle",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {

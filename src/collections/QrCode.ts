@@ -5,6 +5,9 @@ const QrcodeResponseAttributes: CollectionConfig = {
     admin: {
         useAsTitle: "image",
       },
+      access: {
+          read: () => true,
+        },
     auth: true,
     fields: [
       {

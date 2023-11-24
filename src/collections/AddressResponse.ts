@@ -5,6 +5,9 @@ const AddressResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "address1",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {

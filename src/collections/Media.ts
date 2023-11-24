@@ -6,6 +6,9 @@ const Media: CollectionConfig = {
     useAsTitle: "name",
   },
   upload:true,
+  access: {
+    read: () => true,
+  },
   labels:{
     singular:'upload',
     plural:'uploads'

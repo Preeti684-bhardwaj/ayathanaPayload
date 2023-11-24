@@ -5,6 +5,9 @@ const ContactResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "website",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {

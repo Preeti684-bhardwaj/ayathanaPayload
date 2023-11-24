@@ -5,6 +5,9 @@ const GalleryNewResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "media_data",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {

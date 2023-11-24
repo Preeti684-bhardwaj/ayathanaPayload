@@ -6,6 +6,9 @@ const ContentUpdateResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "update_time",
   },
+  access: {
+      read: () => true,
+    },
 auth: true,
   fields: [
     {

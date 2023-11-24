@@ -5,6 +5,9 @@ const TemplateResponseAttributes: CollectionConfig = {
     admin: {
         useAsTitle: "template_number_tag",
       },
+      access: {
+        read: () => true,
+      },
     auth: true,
     fields: [
       {

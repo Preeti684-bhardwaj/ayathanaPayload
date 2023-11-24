@@ -6,6 +6,9 @@ const SectionDetailResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "title",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {

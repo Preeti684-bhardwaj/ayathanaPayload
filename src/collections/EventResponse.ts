@@ -5,6 +5,9 @@ const EventResponseAttributes: CollectionConfig = {
   admin: {
     useAsTitle: "name",
   },
+  access: {
+    read: () => true,
+  },
   auth: true,
   fields: [
     {
