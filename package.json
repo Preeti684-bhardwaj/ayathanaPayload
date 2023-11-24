@@ -15,6 +15,9 @@
     "generate:graphQLSchema": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema",
     "payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@payloadcms/bundler-webpack": "^1.0.0",
     "@payloadcms/plugin-cloud": "^2.0.0",
