@@ -2,9 +2,6 @@ import { CollectionConfig } from 'payload/types'
 
 const Users: CollectionConfig = {
   slug: 'users',
-  access: {
-    read: () => true,
-  },
   auth: {
     cookies:{
       secure:process.env.PAYLOAD_ENV!=='development',
