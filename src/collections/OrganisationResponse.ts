@@ -8,7 +8,12 @@ const OrganizationResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
-  auth: true,
+  auth: {
+    cookies:{
+      secure:process.env.PAYLOAD_ENV!=='development',
+      sameSite:process.env.PAYLOAD_ENV==='testing'?'none':'lax',
+    }
+  },
   fields: [
     {
       name: "name",
@@ -53,7 +58,6 @@ const OrganizationResponseAttributes: CollectionConfig = {
     {
       name: "deals",
       type: "relationship",
-      required: true,
       relationTo: "dealResponse",
       hasMany:true // Adjust the relationTo value based on your configuration
     },
@@ -67,21 +71,18 @@ const OrganizationResponseAttributes: CollectionConfig = {
     {
       name: "highlights",
       type: "relationship",
-      required: true,
       relationTo: "highlightResponse", 
       hasMany:true// Adjust the relationTo value based on your configuration
     },
     {
       name: "campaigns",
       type: "relationship",
-      required: true,
       relationTo: "campaignResponse", 
       hasMany:true// Adjust the relationTo value based on your configuration
     },
     {
       name: "brand_story",
       type: "relationship",
-      required: true,
       relationTo: "aboutSectionResponse",
       hasMany:true // Adjust the relationTo value based on your configuration
     },
@@ -95,14 +96,12 @@ const OrganizationResponseAttributes: CollectionConfig = {
     {
       name: "galleries",
       type: "relationship",
-      required: true,
       relationTo: "galleryNewResponse",
       hasMany:true // Adjust the relationTo value based on your configuration
     },
     {
       name: "content_update",
       type: "relationship",
-      required: true,
       relationTo: "contentUpdateResponse",
       hasMany:false // Adjust the relationTo value based on your configuration
     },
@@ -115,8 +114,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
           type: "relationship",
           relationTo: "media",
         },
-      ],
-      required: true, // Adjust the relationTo value based on your configuration
+      ], // Adjust the relationTo value based on your configuration
     },
   ],
 };

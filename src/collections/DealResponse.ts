@@ -8,7 +8,12 @@ const DealResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
-  auth: true,
+  auth: {
+    cookies:{
+      secure:process.env.PAYLOAD_ENV!=='development',
+      sameSite:process.env.PAYLOAD_ENV==='testing'?'none':'lax',
+    }
+  },
   fields: [
     {
       name: 'title',
@@ -21,7 +26,7 @@ const DealResponseAttributes: CollectionConfig = {
     {
       name: 'media_list',
       type: 'relationship',
-required: true,
+      required: true,
       relationTo: 'media', // Adjust the relationTo value based on your data model
     },
    ],
