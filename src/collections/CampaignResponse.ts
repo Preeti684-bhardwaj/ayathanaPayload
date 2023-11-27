@@ -29,6 +29,7 @@ const CampaignResponseAttributes: CollectionConfig = {
       name: "type",
       type: "text",
       required: true,
+      
     },
     {
       name: "date",
