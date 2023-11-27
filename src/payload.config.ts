@@ -32,6 +32,18 @@ import HighlightResponseAttributes from './collections/HighlightResponse'
 import TemplateResponseAttributes from './collections/Template'
 import QrcodeResponseAttributes from './collections/QrCode'
 import OrganizationResponseAttributes from './collections/OrganisationResponse'
+import Websiteclient from './collections/websites/WebsiteClients'
+import Websitefooter from './collections/websites/WebsiteFooter'
+import Websitehome from './collections/websites/WebsiteHome'
+import Websitenavbar from './collections/websites/WebsiteNavbar'
+import Websitenavbarlogo from './collections/websites/WebsiteNavbarLogo'
+import Websiteoffer from './collections/websites/WebsiteOffer'
+import WebsiteoffersDigitalMarketing from './collections/websites/WebsiteOfferDigitalMarketing'
+import Websiteoffercard from './collections/websites/WebsiteOfferCard'
+import WebsiteoffersDigitalMarketingCards from './collections/websites/WebsiteOfferDigitalMarketingCards'
+import Websiteteam from './collections/websites/WebsiteTeams'
+import Websiteteamcard from './collections/websites/WebsiteTeamCards'
+import Upload from './collections/websites/Upload'
 
 export default buildConfig({
   serverURL:process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -67,7 +79,20 @@ export default buildConfig({
     HighlightResponseAttributes,
     QrcodeResponseAttributes,
     TemplateResponseAttributes,
-    OrganizationResponseAttributes
+    OrganizationResponseAttributes,
+    // website isibisi
+    Websiteclient,
+    Websitefooter,
+    Websitehome,
+    Websitenavbar,
+    Websitenavbarlogo,
+    Websiteoffer,
+    Websiteoffercard,
+    WebsiteoffersDigitalMarketingCards,
+    WebsiteoffersDigitalMarketing,
+    Websiteteam,
+    Websiteteamcard,
+    Upload
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),

@@ -10,8 +10,8 @@ const Media: CollectionConfig = {
     read: () => true,
   },
   labels:{
-    singular:'upload',
-    plural:'uploads'
+    singular:'media',
+    plural:'medias'
   },
 //   access: {
 //     read: () => true,
