@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
 const Websiteteam: CollectionConfig = {
-  slug: 'websiteteam',
+  slug: 'websiteTeam',
   admin: {
     useAsTitle: "Heading",
   },
@@ -23,7 +23,7 @@ const Websiteteam: CollectionConfig = {
       {
         name:"websiteTeamCard",
         type:"relationship",
-        relationTo:"websiteteamcard",
+        relationTo:"websiteTeamCard",
         hasMany: true,
   
       },

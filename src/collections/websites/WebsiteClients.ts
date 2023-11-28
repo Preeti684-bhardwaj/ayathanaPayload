@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
 const Websiteclient: CollectionConfig = {
-  slug: 'websiteclient',
+  slug: 'websiteClient',
   access: {
     read: () => true,
   },
@@ -28,6 +28,11 @@ const Websiteclient: CollectionConfig = {
             type: "upload",
             relationTo: "upload",
           },
+          {
+            name:"alternativeText",
+            type:"text"
+
+          }
         ],
       },
    ],

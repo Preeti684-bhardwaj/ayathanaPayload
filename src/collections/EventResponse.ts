@@ -43,7 +43,7 @@ const EventResponseAttributes: CollectionConfig = {
     },
     {
       name: "thumbnail",
-      type: "relationship",
+      type: "upload",
       relationTo: "media",
     },
     {

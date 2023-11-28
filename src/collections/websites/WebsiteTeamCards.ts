@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
 const Websiteteamcard: CollectionConfig = {
-  slug: 'websiteteamcard',
+  slug: 'websiteTeamCard',
   admin: {
     useAsTitle: "Heading",
   },

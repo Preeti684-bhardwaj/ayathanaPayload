@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
 const WebsiteoffersDigitalMarketingCards: CollectionConfig = {
-  slug: 'WebsiteoffersDigitalMarketingCards',
+  slug: 'WebsiteoffersDigitalMarketingCard',
   admin: {
     useAsTitle: "Heading",
   },

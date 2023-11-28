@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
 const Websitenavbarlogo: CollectionConfig = {
-  slug: 'websitenavbarlogo',
+  slug: 'websiteNavbarLogo',
   access: {
     read: () => true,
   },
@@ -13,6 +13,10 @@ const Websitenavbarlogo: CollectionConfig = {
       relationTo:"upload"
 
 
+    },
+    {
+      name:"navbarLogoAlternativeText",
+      type:"text"
     },
     
     

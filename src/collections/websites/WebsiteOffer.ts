@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
-const Websiteoffer: CollectionConfig = {
-  slug: 'websiteoffer',
+const WebsiteofferBrandStrategy: CollectionConfig = {
+  slug: 'WebsiteoffersBrandStrategy',
   admin: {
     useAsTitle: "Heading",
   },
@@ -21,9 +21,9 @@ const Websiteoffer: CollectionConfig = {
        
       },
       {
-        name:"websiteOfferCard",
+        name:"WebsiteofferBrandStrategycard",
         type:"relationship",
-        relationTo:"websiteoffercard",
+        relationTo:"WebsiteoffersBrandStrategycard",
         hasMany: true,
   
       },
@@ -32,4 +32,4 @@ const Websiteoffer: CollectionConfig = {
   ],
 }
 
-export default Websiteoffer
+export default WebsiteofferBrandStrategy

@@ -37,13 +37,13 @@ const ProductVariantResponseAttributes: CollectionConfig = {
     },
     {
       name: "thumbnail",
-      type: "relationship",
+      type: "upload",
       required: true,
       relationTo: "media", // Adjust the relationTo value based on your data model
     },
     {
       name: "media_list",
-      type: "relationship",
+      type: "upload",
       required: true,
       relationTo: "media", // Adjust the relationTo value based on your data model
     },

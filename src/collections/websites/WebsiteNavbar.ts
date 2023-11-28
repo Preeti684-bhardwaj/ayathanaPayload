@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
  const Websitenavbar: CollectionConfig = {
-  slug: 'Websitenavbar',
+  slug: 'WebsiteNavbar',
   access: {
     read: () => true,
   },

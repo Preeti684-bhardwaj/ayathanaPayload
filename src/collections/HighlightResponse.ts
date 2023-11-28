@@ -27,7 +27,7 @@ const HighlightResponseAttributes: CollectionConfig = {
     },
     {
       name: "media_list",
-      type: "relationship",
+      type: "upload",
       required: true,
       relationTo: "media", // Adjust the relationTo value based on your data model
     },

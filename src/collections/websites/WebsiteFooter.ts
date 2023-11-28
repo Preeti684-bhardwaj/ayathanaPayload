@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types'
 
 const Websitefooter: CollectionConfig = {
-  slug: 'Websitefooter',
+  slug: 'WebsiteFooter',
   access: {
     read: () => true,
   },
@@ -15,7 +15,7 @@ const Websitefooter: CollectionConfig = {
       },
      
       {
-        name:'footerText',
+        name:'footerBottomText',
         type: 'text', // required
         // required: true, 
       },
@@ -26,6 +26,26 @@ const Websitefooter: CollectionConfig = {
       type:"upload",
       relationTo:"upload"
     },
+    {
+      name:'websitelogoalternativetext',
+      type:'text'
+    },
+    {
+      name: "socilMediaIcons",
+      type: "array",
+      fields: [
+        {
+          name: "socialMediaIcon",
+          type: "upload",
+          relationTo: "upload",
+        },
+        {
+          name: "socialMediaLink",
+          type: "text",
+         },
+      ],
+    },
+    
    
    
     

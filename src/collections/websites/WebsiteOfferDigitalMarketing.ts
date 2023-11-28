@@ -17,9 +17,9 @@ const WebsiteoffersDigitalMarketing: CollectionConfig = {
     },
     
       {
-        name:"WebsiteoffersDigitalMarketingCards",
+        name:"WebsiteoffersDigitalMarketingCard",
         type:"relationship",
-        relationTo:"WebsiteoffersDigitalMarketingCards",
+        relationTo:"WebsiteoffersDigitalMarketingCard",
         hasMany: true,
   
       },

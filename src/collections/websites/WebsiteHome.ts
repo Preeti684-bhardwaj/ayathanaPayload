@@ -1,29 +1,29 @@
 import { CollectionConfig } from 'payload/types'
 
 const Websitehome: CollectionConfig = {
-  slug: 'websitehome',
+  slug: 'websiteHome',
   access: {
     read: () => true,
   },
   fields: [
   
     {
-      name: 'heading', // required
+      name: 'Heading', // required
      type: 'text', // required
     //  required: true,  
     },
       {
-        name:'subheadingone',
+        name:'subHeadingOne',
         type: 'text', // required
        
       },
       {
-        name:'subheadingtwo',
+        name:'subHeadingTwo',
         type: 'text', // required
         // required: true,
       },
       {
-        name:'description',
+        name:'Description',
         type: 'text', // required
         // required: true, 
       },
@@ -37,14 +37,14 @@ const Websitehome: CollectionConfig = {
 
       
      {
-      name:'imagesection',
+      name:'imageSection',
       type:"upload",
       relationTo:"upload"
 
 
     },
     {
-      name:"videosection",
+      name:"videoSection",
       type:"upload",
       relationTo:"upload"
 

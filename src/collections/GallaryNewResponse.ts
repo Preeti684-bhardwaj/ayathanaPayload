@@ -17,7 +17,7 @@ const GalleryNewResponseAttributes: CollectionConfig = {
   fields: [
     {
       name: "media_data",
-      type: "relationship",
+      type: "upload",
       required: true,
       relationTo: "media", // Adjust the relationTo value based on your data model
     },
