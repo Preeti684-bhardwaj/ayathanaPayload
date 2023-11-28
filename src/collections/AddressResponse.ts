@@ -47,7 +47,7 @@ const AddressResponseAttributes: CollectionConfig = {
     },
     {
       name: "thumbnail",
-      type: "relationship",
+      type: "upload",
       relationTo: "media",
       required: true,
     },
