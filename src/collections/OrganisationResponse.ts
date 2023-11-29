@@ -27,13 +27,12 @@ const OrganizationResponseAttributes: CollectionConfig = {
     },
     {
       name: "thumbnail",
-      type: "relationship",
+      type: "upload",
       relationTo: "media",
-      required: true,
     },
     {
       name: "logo",
-      type: "relationship",
+      type: "upload",
       relationTo: "media",
       required: true,
     },
@@ -44,7 +43,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
     },
     {
       name: "background",
-      type: "relationship",
+      type: "upload",
       relationTo: "media",
       required: true,
     },
@@ -90,7 +89,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
       name: "product_categories",
       type: "relationship",
       required: true,
-      relationTo: "productCategoryResponse", 
+      relationTo: ["productCategoryResponse","productResponse"], 
       hasMany:true// Adjust the relationTo value based on your configuration
     },
     {
