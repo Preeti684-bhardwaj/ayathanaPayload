@@ -1,14 +1,18 @@
 import { CollectionConfig } from 'payload/types'
 
-const Media: CollectionConfig = {
+const Upload: CollectionConfig = {
   slug: 'media',
-  admin: {
-    useAsTitle: "name",
-  },
-  upload:true,
   access: {
     read: () => true,
   },
-  fields:[]
+  upload:true,
+  labels:{
+    singular:'media',
+    plural:'medias'
+  },
+//   access: {
+//     read: () => true,
+//   },
+ fields:[]
 }
-export default Media
+export default Upload

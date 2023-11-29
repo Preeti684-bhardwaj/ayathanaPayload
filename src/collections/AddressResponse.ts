@@ -23,7 +23,6 @@ const AddressResponseAttributes: CollectionConfig = {
     {
       name: "address2",
       type: "text",
-      required: true,
     },
     {
       name: "city",
