@@ -83,7 +83,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
       name: "product_categories",
       type: "relationship",
       required: true,
-      relationTo:"productCategoryResponse", 
+      relationTo: "productCategoryResponse", 
       hasMany:true// Adjust the relationTo value based on your configuration
     },
     {

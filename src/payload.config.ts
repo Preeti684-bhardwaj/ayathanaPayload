@@ -44,6 +44,8 @@ import WebsiteoffersDigitalMarketingCards from './collections/websites/WebsiteOf
 import Websiteteam from './collections/websites/WebsiteTeams'
 import Websiteteamcard from './collections/websites/WebsiteTeamCards'
 import Upload from './collections/websites/Upload'
+import WebsiteAdvisoryBoardTeam from './collections/websites/WebsiteAdvisoryBoardTeam'
+import WebsiteFoundingTeam from './collections/websites/WebsiteFoundingTeam'
 
 export default buildConfig({
   serverURL:process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -92,6 +94,8 @@ export default buildConfig({
     WebsiteoffersDigitalMarketing,
     Websiteteam,
     Websiteteamcard,
+    WebsiteAdvisoryBoardTeam,
+    WebsiteFoundingTeam,
     Upload
   ],
   typescript: {

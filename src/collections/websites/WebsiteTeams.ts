@@ -15,17 +15,25 @@ const Websiteteam: CollectionConfig = {
      type: 'text', // required
     //  required: true,  
     },
+
       {
         name:'Description',
         type: 'text', // required
        
       },
       {
-        name:"websiteTeamCard",
+        name:"WebsiteFoundingTeamSection",
         type:"relationship",
-        relationTo:"websiteTeamCard",
+        relationTo:"WebsiteFoundingTeam",
         hasMany: true,
   
+      },
+      {
+        name:"WebsiteAdvisoryBoardTeamSection",
+        type:"relationship",
+        relationTo:"WebsiteAdvisoryBoardTeam",
+        hasMany:true,
+
       },
    
     
