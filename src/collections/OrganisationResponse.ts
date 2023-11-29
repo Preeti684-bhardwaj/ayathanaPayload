@@ -8,12 +8,6 @@ const OrganizationResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
-  auth: {
-    cookies:{
-      secure:process.env.PAYLOAD_ENV!=='development',
-      sameSite:process.env.PAYLOAD_ENV==='testing'?'none':'lax',
-    }
-  },
   fields: [
     {
       name: "name",
@@ -65,7 +59,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
       type: "relationship",
       required: true,
       relationTo: "contactResponse",
-      hasMany:false // Adjust the relationTo value based on your configuration
+      hasMany:false ,// Adjust the relationTo value based on your configuration
     },
     {
       name: "highlights",
@@ -89,7 +83,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
       name: "product_categories",
       type: "relationship",
       required: true,
-      relationTo: ["productCategoryResponse","productResponse"], 
+      relationTo:"productCategoryResponse", 
       hasMany:true// Adjust the relationTo value based on your configuration
     },
     {
@@ -111,7 +105,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
         {
           name: "image",
           type: "relationship",
-          relationTo: "media",
+          relationTo:"media",
         },
       ], // Adjust the relationTo value based on your configuration
     },
