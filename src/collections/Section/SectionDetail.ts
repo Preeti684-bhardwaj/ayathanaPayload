@@ -9,6 +9,7 @@ const SectionDetailResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
+  auth:true,
   fields: [
     {
       name: 'title',

@@ -8,6 +8,7 @@ const TemplateResponseAttributes: CollectionConfig = {
       access: {
         read: () => true,
       },
+      auth:true,
     fields: [
       {
         name: 'template_number_tag',

@@ -8,6 +8,7 @@ const AddressResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
+  auth:true,
   fields: [
     {
       name: "address1",

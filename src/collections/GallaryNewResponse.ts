@@ -8,6 +8,7 @@ const GalleryNewResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
+  auth:true,
   fields: [
     {
       name: "media_data",

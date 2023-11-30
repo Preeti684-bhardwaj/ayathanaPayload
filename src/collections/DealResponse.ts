@@ -8,6 +8,7 @@ const DealResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
+  auth:true,
   fields: [
     {
       name: 'title',

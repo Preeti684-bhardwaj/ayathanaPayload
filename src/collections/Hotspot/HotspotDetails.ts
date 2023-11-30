@@ -8,6 +8,7 @@ const HotspotDetailsResponseAttributes: CollectionConfig = {
       access: {
        read: () => true,
      },
+     auth:true,
     fields: [
       {
         name: 'x',

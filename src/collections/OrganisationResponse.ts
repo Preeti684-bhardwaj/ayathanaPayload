@@ -8,6 +8,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
+  auth:true,
   fields: [
     {
       name: "name",
