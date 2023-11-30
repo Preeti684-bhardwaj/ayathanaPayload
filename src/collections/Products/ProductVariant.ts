@@ -7,6 +7,7 @@ const ProductVariantResponseAttributes: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create: () => true,
   },
   auth:true,
   fields: [
@@ -46,7 +47,8 @@ const ProductVariantResponseAttributes: CollectionConfig = {
       name: "colour_palette_list",
       type: "relationship",
       required: true,
-      relationTo: "colourPaletteResponse", // Adjust the relationTo value based on your data model
+      relationTo: "colourPaletteResponse",
+      hasMany:true // Adjust the relationTo value based on your data model
     },
     {
       name: "hotspot_images",
@@ -58,7 +60,8 @@ const ProductVariantResponseAttributes: CollectionConfig = {
       name: "product_exterior_images",
       type: "relationship",
       required: true,
-      relationTo: "productExteriorResponse", // Adjust the relationTo value based on your data model
+      relationTo: "productExteriorResponse",
+      hasMany:true // Adjust the relationTo value based on your data model
     },
     {
       name: "experience_3_ds",

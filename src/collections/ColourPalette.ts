@@ -1,5 +1,6 @@
 import { CollectionConfig } from "payload/types";
 
+
 const ColourPaletteResponseAttributes: CollectionConfig = {
   slug: "colourPaletteResponse",
   admin: {
