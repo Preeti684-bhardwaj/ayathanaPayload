@@ -7,8 +7,8 @@ const EventResponseAttributes: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create:()=>true
   },
-  auth:true,
   fields: [
     {
       name: "name",

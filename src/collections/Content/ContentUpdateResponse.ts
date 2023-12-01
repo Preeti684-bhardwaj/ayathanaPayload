@@ -8,8 +8,8 @@ const ContentUpdateResponseAttributes: CollectionConfig = {
   },
   access: {
       read: () => true,
+      create:()=>true
     },
-    auth:true,
   fields: [
     {
       name: 'update_time',

@@ -7,8 +7,9 @@ const ContactResponseAttributes: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create:()=>true
   },
-  auth:true,
+
   fields: [
     {
       name: "phone1",

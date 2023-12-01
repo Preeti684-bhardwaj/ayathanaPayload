@@ -7,8 +7,9 @@ const AboutSectionResponseAttributes: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create:()=>true
   },
-  auth:true,
+
   fields: [
     {
       name: "tabTitle",

@@ -16,9 +16,7 @@ const Admins: CollectionConfig = {
       required: true,
       options: [
         'user',
-        'admin',
-        'editor',
-        'developer',
+        'admin'
       ],
     },
   ],

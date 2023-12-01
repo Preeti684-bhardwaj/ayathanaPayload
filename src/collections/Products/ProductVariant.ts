@@ -9,7 +9,6 @@ const ProductVariantResponseAttributes: CollectionConfig = {
     read: () => true,
     create: () => true,
   },
-  auth:true,
   fields: [
     {
       name: "title",

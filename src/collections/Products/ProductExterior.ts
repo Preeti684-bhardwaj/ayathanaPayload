@@ -7,8 +7,8 @@ const ProductExteriorResponseAttributes: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create:()=>true
   },
-  auth:true,
   fields: [
     {
       name: "title",

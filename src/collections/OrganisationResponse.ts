@@ -7,8 +7,9 @@ const OrganizationResponseAttributes: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create:()=>true
   },
-  auth:true,
+
   fields: [
     {
       name: "name",
@@ -107,6 +108,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
           name: "image",
           type: "relationship",
           relationTo:"media",
+          hasMany:true
         },
       ], // Adjust the relationTo value based on your configuration
     },
