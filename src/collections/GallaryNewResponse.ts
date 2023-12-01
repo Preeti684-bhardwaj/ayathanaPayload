@@ -8,14 +8,10 @@ const GalleryNewResponseAttributes: CollectionConfig = {
   access: {
     read: () => true,
   },
-  auth: {
-    useAPIKey: true,
-    disableLocalStrategy: true,
-  },
   fields: [
     {
       name: "media_data",
-      type: "upload",
+      type: "relationship",
       required: true,
       relationTo: "media", // Adjust the relationTo value based on your data model
     },
