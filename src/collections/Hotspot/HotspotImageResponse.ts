@@ -8,7 +8,16 @@ const HotspotImagesResponseAttributes: CollectionConfig = {
   },
   access: {
       read: () => true,
-      create:()=>true
+    },
+    auth: {
+      verify: {
+        generateEmailHTML: ({ req, token, user }) => {
+          // Use the token provided to allow your user to verify their account
+          const url = `https://ayathanapayload.payloadcms.app/verify?token=${token}`
+  
+          return `Hey ${user.email}, verify your email by clicking here: ${url}`
+        },
+      },
     },
   fields: [
     {
