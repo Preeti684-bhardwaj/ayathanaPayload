@@ -21,25 +21,12 @@ const ProductVariantResponseAttributes: CollectionConfig = {
     },
     {
       name: "size",
-      type: "select",
-      hasMany: true,
-      options: [
+      type: "array",
+      fields:[
         {
-          label: "S",
-          value: "Small",
-        },
-        {
-          label: "M",
-          value: "Medium",
-        },
-        {
-          label: "L",
-          value: "Large",
-        },
-        {
-          label: "XL",
-          value: "Extra Large",
-        },
+          name:'Features',
+          type:'text'
+        }
       ],
       required: true,
     },
