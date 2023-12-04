@@ -22,7 +22,7 @@ const ColourPaletteResponseAttributes: CollectionConfig = {
     },
     {
       name: "thumbnail",
-      type: "upload",
+      type: "relationship",
       required: true,
       relationTo: "media",
     },
