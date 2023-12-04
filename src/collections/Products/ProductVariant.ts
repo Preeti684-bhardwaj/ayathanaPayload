@@ -21,12 +21,38 @@ const ProductVariantResponseAttributes: CollectionConfig = {
     },
     {
       name: "size",
-      type: "text",
+      type: "select",
+      hasMany: true,
+      options: [
+        {
+          label: "S",
+          value: "Small",
+        },
+        {
+          label: "M",
+          value: "Medium",
+        },
+        {
+          label: "L",
+          value: "Large",
+        },
+        {
+          label: "XL",
+          value: "Extra Large",
+        },
+      ],
       required: true,
     },
     {
       name: "keyFeatures",
-      type: "text",
+      type: "array",
+      fields:[
+        {
+          name:'Features',
+          type:'text'
+        }
+
+      ],
       required: true,
     },
     {
@@ -46,7 +72,7 @@ const ProductVariantResponseAttributes: CollectionConfig = {
       type: "relationship",
       required: true,
       relationTo: "colourPaletteResponse",
-      hasMany:true // Adjust the relationTo value based on your data model
+      hasMany: true, // Adjust the relationTo value based on your data model
     },
     {
       name: "hotspot_images",
@@ -59,7 +85,7 @@ const ProductVariantResponseAttributes: CollectionConfig = {
       type: "relationship",
       required: true,
       relationTo: "productExteriorResponse",
-      hasMany:true // Adjust the relationTo value based on your data model
+      hasMany: true, // Adjust the relationTo value based on your data model
     },
     {
       name: "experience_3_ds",
