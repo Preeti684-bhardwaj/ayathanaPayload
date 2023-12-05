@@ -46,6 +46,7 @@ import Websiteteamcard from './collections/websites/WebsiteTeamCards'
 import Upload from './collections/websites/Upload'
 import WebsiteAdvisoryBoardTeam from './collections/websites/WebsiteAdvisoryBoardTeam'
 import WebsiteFoundingTeam from './collections/websites/WebsiteFoundingTeam'
+import Register from './collections/UserRegister'
 
 export default buildConfig({
   serverURL:process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -59,6 +60,7 @@ export default buildConfig({
   collections: [
     Media,
     Users,
+    Register,
     AboutContentResponseAttributes,
     ContentUpdateResponseAttributes,
     HotspotDetailsResponseAttributes,
