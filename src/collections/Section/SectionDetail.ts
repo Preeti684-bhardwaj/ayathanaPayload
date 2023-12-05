@@ -1,8 +1,8 @@
-import { CollectionConfig } from 'payload/types';
+import { CollectionConfig } from "payload/types";
 
 // SectionDetailResponseAttributes
 const SectionDetailResponseAttributes: CollectionConfig = {
-  slug: 'sectionDetailResponse',
+  slug: "sectionDetailResponse",
   admin: {
     useAsTitle: "title",
   },
@@ -11,27 +11,27 @@ const SectionDetailResponseAttributes: CollectionConfig = {
   },
   fields: [
     {
-      name: 'title',
-      type: 'text',
+      name: "title",
+      type: "text",
       required: true,
     },
     {
-      name: 'tag',
-      type: 'text',
-     required: true,
-    },
-    {
-      name: 'qrcode',
-      type: 'relationship',
+      name: "tag",
+      type: "text",
       required: true,
-      relationTo: 'qrcodeResponse',
     },
     {
-      name: 'template',
-      type: 'relationship',
-required: true,
-      relationTo: 'templateResponse',
+      name: "qrcode",
+      type: "relationship",
+      required: true,
+      relationTo: "qrcodeResponse",
     },
-     ],
+    {
+      name: "template",
+      type: "relationship",
+      required: true,
+      relationTo: "templateResponse",
+    },
+  ],
 };
-export default SectionDetailResponseAttributes
+export default SectionDetailResponseAttributes;

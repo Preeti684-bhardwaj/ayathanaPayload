@@ -2,6 +2,10 @@ import { CollectionConfig } from 'payload/types'
 
 const Register: CollectionConfig = {
   slug: 'register',
+  access: {
+    create: () => true,
+    read: () => true,
+  },
   auth: {
     cookies:{
       secure:process.env.PAYLOAD_ENV!=='development',
