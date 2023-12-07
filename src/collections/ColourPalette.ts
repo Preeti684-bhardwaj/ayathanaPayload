@@ -26,6 +26,13 @@ const ColourPaletteResponseAttributes: CollectionConfig = {
       required: true,
       relationTo: "media",
     },
+    {
+      name:"product_exterior_img",
+      type:"relationship",
+      required:true,
+      relationTo:'productExteriorResponse',
+      hasMany:true
+    }
   ],
 };
 
