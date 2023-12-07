@@ -44,7 +44,7 @@ const EventResponseAttributes: CollectionConfig = {
       name: "organization",
       type: "relationship",
       relationTo: "organizationResponse",
-      hasMany: false,
+      hasMany: true,
     },
   ],
 };
