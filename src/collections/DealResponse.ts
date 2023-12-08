@@ -18,10 +18,23 @@ const DealResponseAttributes: CollectionConfig = {
       type: 'text',
     },
     {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
+    },
+    {
       name: 'media_list',
-      type: 'upload',
-      required: true,
-      relationTo: 'media', // Adjust the relationTo value based on your data model
+      type: "array",
+      fields: [
+        {
+          name: "image",
+          type: "relationship",
+          relationTo:"media",
+          hasMany:true
+        },
+      ],
+      required:true // Adjust the relationTo value based on your data model
     },
    ],
 };

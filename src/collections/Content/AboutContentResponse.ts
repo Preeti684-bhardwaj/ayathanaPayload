@@ -21,9 +21,15 @@ const AboutContentResponseAttributes: CollectionConfig = {
     },
     {
       name: "media_list",
-      type: "relationship",
-      required: true,
-      relationTo: "media", // Adjust the relationTo value based on your data model
+      type: "array",
+      fields: [
+        {
+          name: "image",
+          type: "relationship",
+          relationTo:"media",
+          hasMany:true
+        },
+      ], // Adjust the relationTo value based on your data model
     },
     
   ],

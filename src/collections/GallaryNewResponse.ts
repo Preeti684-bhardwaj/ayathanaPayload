@@ -15,6 +15,12 @@ const GalleryNewResponseAttributes: CollectionConfig = {
       required: true,
       relationTo: "media", // Adjust the relationTo value based on your data model
     },
+    {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
+    },
   ],
 };
 

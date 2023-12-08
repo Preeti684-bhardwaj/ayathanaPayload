@@ -10,7 +10,7 @@ const AboutSectionResponseAttributes: CollectionConfig = {
   },
   fields: [
     {
-      name: "tabTitle",
+      name: "Title",
       type: "text",
       required: true,
     },
@@ -25,6 +25,12 @@ const AboutSectionResponseAttributes: CollectionConfig = {
       required: true,
       relationTo: "aboutContentResponse",
       hasMany:true // Adjust the relationTo value based on your data model
+    },
+    {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
     },
   ],
 };

@@ -21,8 +21,27 @@ const CampaignResponseAttributes: CollectionConfig = {
     },
     {
       name: "type",
-      type: "text",
-      required: true,
+      type: 'select', // required
+      hasMany: true,
+      required:true,
+      admin: {
+        isClearable: true,
+        isSortable: true, // use mouse to drag and drop different values, and sort them according to your choice
+      },
+      options: [
+        {
+          label: 'Previous',
+          value: 'Previous',
+        },
+        {
+          label: 'On going',
+          value: 'On going',
+        },
+        {
+          label: 'Upcoming',
+          value: 'Upcoming',
+        },
+      ],
 
     },
     {
@@ -53,10 +72,22 @@ const CampaignResponseAttributes: CollectionConfig = {
       required: true,
     },
     {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
+    },
+    {
       name: "media_list",
-      type: "upload",
-      required: true,
-      relationTo: "media", // Adjust the relationTo value based on your data model
+      type: "array",
+      fields: [
+        {
+          name: "image",
+          type: "relationship",
+          relationTo:"media",
+          hasMany:true
+        },
+      ], // Adjust the relationTo value based on your data model
     },
   ],
 };

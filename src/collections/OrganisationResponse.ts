@@ -42,13 +42,6 @@ const OrganizationResponseAttributes: CollectionConfig = {
       required: true,
     },
     {
-      name: "address",
-      type: "relationship",
-      required: true,
-      relationTo: "addressResponse",
-      hasMany:false // Adjust the relationTo value based on your configuration
-    },
-    {
       name: "deals",
       type: "relationship",
       relationTo: "dealResponse",
@@ -57,7 +50,6 @@ const OrganizationResponseAttributes: CollectionConfig = {
     {
       name: "contact",
       type: "relationship",
-      required: true,
       relationTo: "contactResponse",
       hasMany:false ,// Adjust the relationTo value based on your configuration
     },
@@ -82,7 +74,6 @@ const OrganizationResponseAttributes: CollectionConfig = {
     {
       name: "product_categories",
       type: "relationship",
-      required: true,
       relationTo: "productCategoryResponse", 
       hasMany:true// Adjust the relationTo value based on your configuration
     },
@@ -91,12 +82,6 @@ const OrganizationResponseAttributes: CollectionConfig = {
       type: "relationship",
       relationTo: "galleryNewResponse",
       hasMany:true // Adjust the relationTo value based on your configuration
-    },
-    {
-      name: "content_update",
-      type: "relationship",
-      relationTo: "contentUpdateResponse",
-      hasMany:false // Adjust the relationTo value based on your configuration
     },
     {
       name: "banner_media",

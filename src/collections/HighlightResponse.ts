@@ -29,12 +29,10 @@ const HighlightResponseAttributes: CollectionConfig = {
     {
       name: "type",
       type: "text",
-      required: true,
     },
     {
       name: "date",
       type: "date",
-      required: true,
       admin: {
         date: {
           pickerAppearance: "dayOnly",
@@ -49,12 +47,16 @@ const HighlightResponseAttributes: CollectionConfig = {
           pickerAppearance: "timeOnly"
         },
       },
-      required: true,
     },
     {
       name: "location",
       type: "text",
-      required: true,
+    },
+    {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
     },
   ],
 };

@@ -40,9 +40,21 @@ const AddressResponseAttributes: CollectionConfig = {
     },
     {
       name: "thumbnail",
-      type: "upload",
-      relationTo: "media",
-      required: true,
+      type: "array",
+      fields: [
+        {
+          name: "image",
+          type: "relationship",
+          relationTo:"media",
+          hasMany:true
+        },
+      ],
+    },
+    {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
     },
   ],
 };

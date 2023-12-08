@@ -17,12 +17,10 @@ const EventResponseAttributes: CollectionConfig = {
     {
       name: "description",
       type: "text",
-      required: true,
     },
     {
       name: "event_date",
       type: "date",
-      required: true,
       admin: {
         date: {
           pickerAppearance: "dayOnly",
@@ -33,7 +31,6 @@ const EventResponseAttributes: CollectionConfig = {
     {
       name: "eventLocation",
       type: "text",
-      required: true,
     },
     {
       name: "thumbnail",
@@ -45,6 +42,12 @@ const EventResponseAttributes: CollectionConfig = {
       type: "relationship",
       relationTo: "organizationResponse",
       hasMany: true,
+    },
+    {
+      name: "content_update",
+      type: "relationship",
+      relationTo: "contentUpdateResponse",
+      hasMany:false // Adjust the relationTo value based on your configuration
     },
   ],
 };

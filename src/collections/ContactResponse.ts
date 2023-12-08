@@ -12,52 +12,55 @@ const ContactResponseAttributes: CollectionConfig = {
     {
       name: "phone1",
       type: "text",
-      required: true,
     },
     {
       name: "phone2",
       type: "text",
-      required: true,
     },
     {
       name: "website",
       type: "text",
-      required: true,
     },
     {
       name: "linkedin",
       type: "text",
-      required: true,
     },
     {
       name: "twitter",
       type: "text",
-      required: true,
     },
     {
       name: "facebook",
       type: "text",
-      required: true,
     },
     {
       name: "youtube",
       type: "text",
-      required: true,
     },
     {
       name: "instagram",
       type: "text",
-      required: true,
     },
     {
       name: "email1",
       type: "text",
-      required: true,
     },
     {
       name: "email2",
       type: "text",
-      required: true,
+    },
+    {
+    name :"address",
+    type:'relationship',
+    relationTo:'addressResponse',
+    hasMany:true,
+    required:true
+    },
+    {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
     },
     {
       name: "qrCodes",
