@@ -43,6 +43,12 @@ const EventResponseAttributes: CollectionConfig = {
       relationTo: "organizationResponse",
       hasMany: true,
     },
+    {
+      name: "content_update",
+      type: "relationship",
+      relationTo: "contentUpdateResponse",
+      hasMany:false,
+    },
   ],
 };
 
