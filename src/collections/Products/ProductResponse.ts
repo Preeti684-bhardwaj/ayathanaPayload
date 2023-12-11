@@ -28,14 +28,12 @@ const ProductResponseAttributes: CollectionConfig = {
     {
       name: "product_variants",
       type: "relationship",
-      required: true,
       relationTo: "productVariantResponse",
       hasMany:true // Adjust the relationTo value based on your data model
     },
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: 'qrcodeResponse',
       hasMany:false// Adjust the relationTo value based on your data model
     }

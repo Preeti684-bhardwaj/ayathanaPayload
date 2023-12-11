@@ -17,12 +17,10 @@ const ProductCategoryResponseAttributes: CollectionConfig = {
     {
       name: "description",
       type: "text",
-      required: true,
     },
     {
       name: "products",
       type: "relationship",
-      required: true,
       relationTo: "productResponse",
       hasMany:true // Adjust the relationTo value based on your data model
     },

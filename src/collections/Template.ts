@@ -3,12 +3,18 @@ import { CollectionConfig } from 'payload/types';
 const TemplateResponseAttributes: CollectionConfig = {
     slug: 'templateResponse',
     admin: {
-        useAsTitle: "template_number_tag",
+        useAsTitle: "Temlate name",
       },
       access: {
         read: () => true,
       },
     fields: [
+      {
+        name: "Temlate name",
+        type: "text",
+        required: true,
+        unique:true
+      },
       {
         name: 'template_number_tag',
         type: 'number',

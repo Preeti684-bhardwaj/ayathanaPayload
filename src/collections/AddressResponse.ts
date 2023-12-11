@@ -49,13 +49,7 @@ const AddressResponseAttributes: CollectionConfig = {
           hasMany:true
         },
       ],
-    },
-    {
-      name: "organization",
-      type: "relationship",
-      relationTo: "organizationResponse",
-      hasMany: false,
-    },
+    }
   ],
 };
 

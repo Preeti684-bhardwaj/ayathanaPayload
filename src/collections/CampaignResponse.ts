@@ -20,14 +20,15 @@ const CampaignResponseAttributes: CollectionConfig = {
       required: true,
     },
     {
+      name: "order",
+      type: "number",
+      required: true,
+    },
+    {
       name: "type",
       type: 'select', // required
       hasMany: true,
       required:true,
-      admin: {
-        isClearable: true,
-        isSortable: true, // use mouse to drag and drop different values, and sort them according to your choice
-      },
       options: [
         {
           label: 'Previous',
@@ -70,12 +71,6 @@ const CampaignResponseAttributes: CollectionConfig = {
       name: "location",
       type: "text",
       required: true,
-    },
-    {
-      name: "organization",
-      type: "relationship",
-      relationTo: "organizationResponse",
-      hasMany: false,
     },
     {
       name: "media_list",

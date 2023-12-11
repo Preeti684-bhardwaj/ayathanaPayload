@@ -28,7 +28,6 @@ const ProductVariantResponseAttributes: CollectionConfig = {
           type:'text'
         }
       ],
-      required: true,
     },
     {
       name: "keyFeatures",
@@ -40,7 +39,6 @@ const ProductVariantResponseAttributes: CollectionConfig = {
         }
 
       ],
-      required: true,
     },
     {
       name: "thumbnail",
@@ -50,50 +48,51 @@ const ProductVariantResponseAttributes: CollectionConfig = {
     },
     {
       name: "media_list",
-      type: "upload",
-      required: true,
-      relationTo: "media", // Adjust the relationTo value based on your data model
+      type: "array",
+      fields: [
+        {
+          name: "image",
+          type: "relationship",
+          relationTo:"media",
+          hasMany:true
+        },
+      ],
+      required:true
+       // Adjust the relationTo value based on your data model
     },
     {
       name: "colour_palette_list",
       type: "relationship",
-      required: true,
       relationTo: "colourPaletteResponse",
       hasMany: true, // Adjust the relationTo value based on your data model
     },
     {
       name: "hotspot_images",
       type: "relationship",
-      required: true,
       relationTo: "hotspotImagesResponse", // Adjust the relationTo value based on your data model
     },
     {
       name: "product_exterior_images",
       type: "relationship",
-      required: true,
       relationTo: "productExteriorResponse",
       hasMany: true, // Adjust the relationTo value based on your data model
     },
     {
       name: "experience_3_ds",
       type: "relationship",
-      required: true,
       relationTo: "productARResponse", // Adjust the relationTo value based on your data model
     },
     {
       name: "price",
       type: "text",
-      required: true,
     },
     {
       name: "original_price",
       type: "text",
-      required: true,
     },
     {
       name: "additional_info",
       type: "text",
-      required: true,
     },
   ],
 };

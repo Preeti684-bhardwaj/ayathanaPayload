@@ -18,10 +18,9 @@ const DealResponseAttributes: CollectionConfig = {
       type: 'text',
     },
     {
-      name: "organization",
-      type: "relationship",
-      relationTo: "organizationResponse",
-      hasMany: false,
+      name: "order",
+      type: "number",
+      required: true,
     },
     {
       name: 'media_list',

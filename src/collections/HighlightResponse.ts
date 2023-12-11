@@ -20,6 +20,11 @@ const HighlightResponseAttributes: CollectionConfig = {
       required: true,
     },
     {
+      name: "order",
+      type: "number",
+      required: true,
+    },
+    {
       name: "media_list",
       type: "relationship",
       required: true,
@@ -51,12 +56,6 @@ const HighlightResponseAttributes: CollectionConfig = {
     {
       name: "location",
       type: "text",
-    },
-    {
-      name: "organization",
-      type: "relationship",
-      relationTo: "organizationResponse",
-      hasMany: false,
     },
   ],
 };
