@@ -29,7 +29,13 @@ const ContentUpdateResponseAttributes: CollectionConfig = {
         },
       },
       required: true,
-    }
+    },
+    {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
+    },
      ],
 };
 
