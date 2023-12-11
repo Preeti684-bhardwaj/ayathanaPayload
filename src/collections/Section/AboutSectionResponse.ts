@@ -3,7 +3,7 @@ import { CollectionConfig } from "payload/types";
 const AboutSectionResponseAttributes: CollectionConfig = {
   slug: "aboutSectionResponse",
   admin: {
-    useAsTitle: "tabTitle",
+    useAsTitle: "Title",
   },
   access: {
     read: () => true,
