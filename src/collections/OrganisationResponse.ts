@@ -7,7 +7,6 @@ const OrganizationResponseAttributes: CollectionConfig = {
   },
   access: {
     read: () => true,
-    create:() => true
   },
   fields: [
     {
