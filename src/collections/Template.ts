@@ -10,7 +10,7 @@ const TemplateResponseAttributes: CollectionConfig = {
       },
     fields: [
       {
-        name: "Temlate name",
+        name: "Temlate_name",
         type: "text",
         required: true,
         unique:true
