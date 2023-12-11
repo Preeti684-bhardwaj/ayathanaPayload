@@ -57,12 +57,6 @@ const ContactResponseAttributes: CollectionConfig = {
     required:true
     },
     {
-      name: "organization",
-      type: "relationship",
-      relationTo: "organizationResponse",
-      hasMany: false,
-    },
-    {
       name: "qrCodes",
       type: "relationship",
       required: true,
