@@ -26,24 +26,23 @@ const CampaignResponseAttributes: CollectionConfig = {
     },
     {
       name: "type",
-      type: 'select', // required
+      type: "select", // required
       hasMany: true,
-      required:true,
+      required: true,
       options: [
         {
-          label: 'Previous',
-          value: 'Previous',
+          label: "Previous",
+          value: "Previous",
         },
         {
-          label: 'On going',
-          value: 'On going',
+          label: "On going",
+          value: "On going",
         },
         {
-          label: 'Upcoming',
-          value: 'Upcoming',
+          label: "Upcoming",
+          value: "Upcoming",
         },
       ],
-
     },
     {
       name: "date",
@@ -57,16 +56,15 @@ const CampaignResponseAttributes: CollectionConfig = {
     },
     {
       name: "time",
-      type: 'date',
+      type: "date",
       admin: {
         date: {
-          pickerAppearance: 'timeOnly',
-          
+          pickerAppearance: "timeOnly",
         },
       },
       required: true,
     },
-    
+
     {
       name: "location",
       type: "text",
@@ -74,15 +72,9 @@ const CampaignResponseAttributes: CollectionConfig = {
     },
     {
       name: "media_list",
-      type: "array",
-      fields: [
-        {
-          name: "image",
-          type: "relationship",
-          relationTo:"media",
-          hasMany:true
-        },
-      ], // Adjust the relationTo value based on your data model
+      type: "relationship",
+      relationTo: "media",
+      hasMany: true,
     },
   ],
 };

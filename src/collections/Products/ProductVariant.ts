@@ -48,15 +48,9 @@ const ProductVariantResponseAttributes: CollectionConfig = {
     },
     {
       name: "media_list",
-      type: "array",
-      fields: [
-        {
-          name: "image",
-          type: "relationship",
-          relationTo:"media",
-          hasMany:true
-        },
-      ],
+      type: "relationship",
+      relationTo: "media",
+      hasMany: true,
       required:true
        // Adjust the relationTo value based on your data model
     },
