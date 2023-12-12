@@ -6,12 +6,13 @@ import payload from 'payload'
 router.get("/api/organization/:organizationId/data" , async (req, res) => {
     try {
       const { organizationId } = req.params;
-      const {keyWord}=req.query;
+      const {keyWord,depth}=req.query;
       // Find the organization by ID
     //   console.log(keyWord)
       const organization = await payload.findByID({
         collection:'organizationResponse',
         id:organizationId,
+        depth:depth||0
       });
       if (!organization) {
           return res.status(404).json({ error: 'Organization not found' });
