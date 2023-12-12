@@ -27,7 +27,7 @@ const CampaignResponseAttributes: CollectionConfig = {
     {
       name: "type",
       type: "select", // required
-      hasMany: true,
+      hasMany: false,
       required: true,
       options: [
         {
