@@ -63,7 +63,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
       name: "campaigns",
       type: "relationship",
       relationTo: "campaignResponse", 
-      hasMany:true// Adjust the relationTo value based on your configuration
+      hasMany:true,// Adjust the relationTo value based on your configuration
     },
     {
       name: "brand_story",
@@ -81,28 +81,14 @@ const OrganizationResponseAttributes: CollectionConfig = {
       name: "galleries",
       type: "relationship",
       relationTo: "galleryNewResponse",
-      hasMany:true,
-      filterOptions: ({ relationTo ,data}) => {
-        // returns a Where query dynamically by the type of relationship
-        if (relationTo === 'galleryNewResponse') {
-          return {
-            data,
-          }
-        }
-      }
- // Adjust the relationTo value based on your configuration
-    },
+      hasMany:true
+    },// Adjust the relationTo value based on your configuration
     {
       name: "banner_media",
-      type: "array",
-      fields: [
-        {
-          name: "image",
-          type: "relationship",
-          relationTo:"media",
-          hasMany:true
-        },
-      ], // Adjust the relationTo value based on your configuration
+      type: "relationship",
+      required: true,
+      relationTo: "media",
+      hasMany:true // Adjust the relationTo value based on your configuration
     },
   ],
 };
