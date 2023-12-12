@@ -81,7 +81,16 @@ const OrganizationResponseAttributes: CollectionConfig = {
       name: "galleries",
       type: "relationship",
       relationTo: "galleryNewResponse",
-      hasMany:true // Adjust the relationTo value based on your configuration
+      hasMany:true,
+      filterOptions: ({ relationTo ,data}) => {
+        // returns a Where query dynamically by the type of relationship
+        if (relationTo === 'galleryNewResponse') {
+          return {
+            data,
+          }
+        }
+      }
+ // Adjust the relationTo value based on your configuration
     },
     {
       name: "banner_media",
