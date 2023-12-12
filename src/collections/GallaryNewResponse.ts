@@ -20,6 +20,12 @@ const GalleryNewResponseAttributes: CollectionConfig = {
       type: "number",
       required: true,
     },
+    {
+      name: "organization",
+      type: "relationship",
+      relationTo: "organizationResponse",
+      hasMany: false,
+    },
   ],
 };
 
