@@ -42,6 +42,7 @@ const CampaignResponseAttributes: CollectionConfig = {
           label: "Upcoming",
           value: "Upcoming",
         },
+        
       ],
     },
     {
@@ -71,10 +72,16 @@ const CampaignResponseAttributes: CollectionConfig = {
       required: true,
     },
     {
-      name: "media_list",
+      name: "campaignmedia_list",
       type: "relationship",
       relationTo: "media",
       hasMany: true,
+    },
+    {
+      name: "qrcode",
+      type: "relationship",
+      required: true,
+      relationTo: "qrcodeResponse",
     },
   ],
 };

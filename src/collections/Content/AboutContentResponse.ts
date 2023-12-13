@@ -25,6 +25,12 @@ const AboutContentResponseAttributes: CollectionConfig = {
       relationTo: "media",
       hasMany: true, // Adjust the relationTo value based on your data model
     },
+    {
+      name: "qrcode",
+      type: "relationship",
+      required: true,
+      relationTo: "qrcodeResponse",
+    },
     
   ],
 };

@@ -57,6 +57,12 @@ const HighlightResponseAttributes: CollectionConfig = {
       name: "location",
       type: "text",
     },
+    {
+      name: "qrcode",
+      type: "relationship",
+      required: true,
+      relationTo: "qrcodeResponse",
+    },
   ],
 };
 

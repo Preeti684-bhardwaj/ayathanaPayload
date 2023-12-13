@@ -20,6 +20,12 @@ const GalleryNewResponseAttributes: CollectionConfig = {
       type: "number",
       required: true,
     },
+    {
+      name: "qrcode",
+      type: "relationship",
+      required: true,
+      relationTo: "qrcodeResponse",
+    },
   ],
 };
 
