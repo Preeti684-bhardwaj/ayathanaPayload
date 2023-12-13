@@ -51,7 +51,6 @@ const ProductVariantResponseAttributes: CollectionConfig = {
       type: "relationship",
       relationTo: "media",
       hasMany: true,
-      required:true
        // Adjust the relationTo value based on your data model
     },
     {
@@ -91,7 +90,6 @@ const ProductVariantResponseAttributes: CollectionConfig = {
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
     },
   ],

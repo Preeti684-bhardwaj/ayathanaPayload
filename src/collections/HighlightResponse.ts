@@ -27,7 +27,6 @@ const HighlightResponseAttributes: CollectionConfig = {
     {
       name: "media_list",
       type: "relationship",
-      required: true,
       relationTo: "media",
       hasMany:true// Adjust the relationTo value based on your data model
     },
@@ -60,7 +59,6 @@ const HighlightResponseAttributes: CollectionConfig = {
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
     },
   ],

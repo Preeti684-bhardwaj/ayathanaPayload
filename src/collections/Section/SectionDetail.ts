@@ -23,7 +23,6 @@ const SectionDetailResponseAttributes: CollectionConfig = {
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
     },
     {

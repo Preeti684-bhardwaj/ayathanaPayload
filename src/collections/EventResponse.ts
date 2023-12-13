@@ -46,7 +46,6 @@ const EventResponseAttributes: CollectionConfig = {
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
     },
     {

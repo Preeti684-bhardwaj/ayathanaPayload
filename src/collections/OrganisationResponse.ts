@@ -86,14 +86,12 @@ const OrganizationResponseAttributes: CollectionConfig = {
     {
       name: "banner_media",
       type: "relationship",
-      required: true,
       relationTo: "media",
       hasMany:true // Adjust the relationTo value based on your configuration
     },
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
     },
   ],

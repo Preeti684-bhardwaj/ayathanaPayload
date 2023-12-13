@@ -80,7 +80,6 @@ const CampaignResponseAttributes: CollectionConfig = {
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
     },
   ],

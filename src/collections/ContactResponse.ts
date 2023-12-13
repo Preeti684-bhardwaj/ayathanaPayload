@@ -59,7 +59,6 @@ const ContactResponseAttributes: CollectionConfig = {
     {
       name: "qrCodes",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
       hasMany:true // Adjust the relationTo value based on your data model
     },

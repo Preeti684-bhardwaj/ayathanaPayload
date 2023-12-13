@@ -28,8 +28,8 @@ const AboutContentResponseAttributes: CollectionConfig = {
     {
       name: "qrcode",
       type: "relationship",
-      required: true,
       relationTo: "qrcodeResponse",
+      hasMany:false
     },
     
   ],
