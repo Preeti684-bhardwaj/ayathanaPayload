@@ -15,9 +15,16 @@ const ProductARResponseAttributes: CollectionConfig = {
        required: true,
     },
     {
-      name: 'description',
-      type: 'text',
+      name: "description",
+      type: "array",
+      fields:[
+        {
+          name:'points',
+          type:'text'
+        },
+      ],
       required: true,
+
     },
     {
       name: 'thumbnail',

@@ -15,9 +15,16 @@ const HotspotResponseAttributes: CollectionConfig = {
        required: true,
       },
       {
-        name: 'description',
-        type: 'text',
-       required: true,
+        name: "description",
+        type: "array",
+        fields:[
+          {
+            name:'points',
+            type:'text'
+          },
+        ],
+        required: true,
+  
       },
       {
         name: 'image',

@@ -14,8 +14,16 @@ const DealResponseAttributes: CollectionConfig = {
       type: 'text',
     },
     {
-      name: 'description',
-      type: 'text',
+      name: "description",
+      type: "array",
+      fields:[
+        {
+          name:'points',
+          type:'text'
+        },
+      ],
+      required: true,
+
     },
     {
       name: "order",

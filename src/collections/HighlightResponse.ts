@@ -16,8 +16,15 @@ const HighlightResponseAttributes: CollectionConfig = {
     },
     {
       name: "description",
-      type: "text",
+      type: "array",
+      fields:[
+        {
+          name:'points',
+          type:'text'
+        },
+      ],
       required: true,
+
     },
     {
       name: "order",
