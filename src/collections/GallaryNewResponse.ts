@@ -3,27 +3,22 @@ import { CollectionConfig } from "payload/types";
 const GalleryNewResponseAttributes: CollectionConfig = {
   slug: "galleryNewResponse",
   admin: {
-    useAsTitle: "media_data",
+    useAsTitle: "title",
   },
   access: {
     read: () => true,
   },
   fields: [
     {
-      name: "media_data",
-      type: "relationship",
-      required: true,
-      relationTo: "media", // Adjust the relationTo value based on your data model
-    },
-    {
-      name: "order",
-      type: "number",
+      name: "title",
+      type: "text",
       required: true,
     },
     {
-      name: "qrcode",
+      name: "Gallery_Category",
       type: "relationship",
-      relationTo: "qrcodeResponse",
+      relationTo: "galleryCategoryResponse",
+      hasMany:true // Adjust the relationTo value based on your data model
     },
   ],
 };

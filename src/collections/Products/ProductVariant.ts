@@ -27,6 +27,16 @@ const ProductVariantResponseAttributes: CollectionConfig = {
 
     },
     {
+      name: "tags",
+      type: "array",
+      fields:[
+        {
+          name:'tag',
+          type:'text'
+        },
+      ],
+    },
+    {
       name: "size",
       type: "array",
       fields:[

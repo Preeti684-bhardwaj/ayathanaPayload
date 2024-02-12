@@ -47,6 +47,7 @@ import Upload from './collections/websites/Upload'
 import WebsiteAdvisoryBoardTeam from './collections/websites/WebsiteAdvisoryBoardTeam'
 import WebsiteFoundingTeam from './collections/websites/WebsiteFoundingTeam'
 import Register from './collections/UserRegister'
+import GalleryCategoryResponseAttributes from './collections/GallaryCategoryResponse'
 
 export default buildConfig({
   serverURL:process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -80,6 +81,7 @@ export default buildConfig({
     DealResponseAttributes,
     EventResponseAttributes,
     GalleryNewResponseAttributes,
+    GalleryCategoryResponseAttributes,
     HighlightResponseAttributes,
     QrcodeResponseAttributes,
     TemplateResponseAttributes,
