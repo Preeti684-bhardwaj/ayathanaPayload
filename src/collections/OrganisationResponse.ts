@@ -101,6 +101,11 @@ const OrganizationResponseAttributes: CollectionConfig = {
       type: "relationship",
       relationTo: "qrcodeResponse",
     },
+    {
+      name: "homeqrcode",
+      type: "relationship",
+      relationTo: "HomeqrcodeResponse",
+    },
   ],
 };
 

@@ -48,6 +48,7 @@ import WebsiteAdvisoryBoardTeam from './collections/websites/WebsiteAdvisoryBoar
 import WebsiteFoundingTeam from './collections/websites/WebsiteFoundingTeam'
 import Register from './collections/UserRegister'
 import GalleryCategoryResponseAttributes from './collections/GallaryCategoryResponse'
+import HomeQrcodeResponseAttributes from './collections/HomeQrCode'
 
 export default buildConfig({
   serverURL:process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -84,6 +85,7 @@ export default buildConfig({
     GalleryCategoryResponseAttributes,
     HighlightResponseAttributes,
     QrcodeResponseAttributes,
+    HomeQrcodeResponseAttributes,
     TemplateResponseAttributes,
     OrganizationResponseAttributes,
     // website isibisi
