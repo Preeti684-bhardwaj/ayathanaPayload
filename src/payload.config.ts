@@ -27,7 +27,7 @@ import ColourPaletteResponseAttributes from './collections/ColourPalette'
 import ContactResponseAttributes from './collections/ContactResponse'
 import DealResponseAttributes from './collections/DealResponse'
 import EventResponseAttributes from './collections/EventResponse'
-import GalleryNewResponseAttributes from './collections/GallaryNewResponse'
+import GalleryCategoryResponseAttributes from './collections/GallaryCategoryResponse'
 import HighlightResponseAttributes from './collections/HighlightResponse'
 import TemplateResponseAttributes from './collections/Template'
 import QrcodeResponseAttributes from './collections/QrCode'
@@ -47,7 +47,7 @@ import Upload from './collections/websites/Upload'
 import WebsiteAdvisoryBoardTeam from './collections/websites/WebsiteAdvisoryBoardTeam'
 import WebsiteFoundingTeam from './collections/websites/WebsiteFoundingTeam'
 import Register from './collections/UserRegister'
-import GalleryCategoryResponseAttributes from './collections/GallaryCategoryResponse'
+import GalleryResponseAttributes from './collections/GallaryResponse'
 import HomeQrcodeResponseAttributes from './collections/HomeQrCode'
 
 export default buildConfig({
@@ -81,7 +81,7 @@ export default buildConfig({
     ContactResponseAttributes,
     DealResponseAttributes,
     EventResponseAttributes,
-    GalleryNewResponseAttributes,
+    GalleryResponseAttributes,
     GalleryCategoryResponseAttributes,
     HighlightResponseAttributes,
     QrcodeResponseAttributes,

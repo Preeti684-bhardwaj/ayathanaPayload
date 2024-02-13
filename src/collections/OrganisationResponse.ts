@@ -87,7 +87,7 @@ const OrganizationResponseAttributes: CollectionConfig = {
     {
       name: "galleries",
       type: "relationship",
-      relationTo: "galleryNewResponse",
+      relationTo: "galleryCategoryResponse",
       hasMany:true
     },// Adjust the relationTo value based on your configuration
     {
