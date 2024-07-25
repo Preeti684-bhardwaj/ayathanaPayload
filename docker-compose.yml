@@ -2,12 +2,14 @@ version: '3'
 
 services:
   payload:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: node:18-alpine
     ports:
       - '3000:3000'
     volumes:
       - .:/home/node/app
-      - node_modules:/home/node/app/node_modules
     working_dir: /home/node/app/
     command: sh -c "npm install && npm run dev"
     depends_on:
@@ -28,4 +30,3 @@ services:
 
 volumes:
   data:
-  node_modules:
